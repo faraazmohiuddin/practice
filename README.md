@@ -6,3 +6,5 @@ para under 2
 para under 3;
 *with star*
 **2 stars now**
+
+look for bullets etc.
