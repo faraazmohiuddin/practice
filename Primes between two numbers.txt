@@ -1,0 +1,12 @@
+a=int(input())
+b=int(input())
+L=[]
+def isprime(m):
+	for i in range(2,m//2):
+		if m%i==0:
+			return True
+for i in range(a,b):
+	if not isprime(i):
+		L.append(i)
+		i=i+1
+print(L)

@@ -1,0 +1,22 @@
+L=[]
+def fib(z):
+	a=0
+	b=1
+	n=0
+	while n<z:
+		L.append(a)
+		L.append(b)
+		n=a+b
+		L.append(n)
+		a=b+n
+		b=n+a
+M=[]
+def between(x,y):
+	for i in L:
+		if i>x and i<y:
+			M.append(i)
+x=int(input())
+y=int(input())
+fib(y)
+between(x,y)
+print(M)

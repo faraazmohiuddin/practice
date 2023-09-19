@@ -1,0 +1,4 @@
+for x in range(990, 1000):
+	y = bin(x)[2:]
+	z = hex(x)[2:].upper()
+	print(f'decimal: {x:3}  binary: {y:5}  hexa: {z:2}')

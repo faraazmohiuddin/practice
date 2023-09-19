@@ -1,0 +1,12 @@
+n=int(input("What is the number of people?"))
+x=0
+y=0
+if n<2:
+	print("Handshakes are not possible.")
+if n==2:
+	y=1
+	print("The number of Handshakes:",y)
+if n>2:
+	y=n-1
+	x=int((y * (y+1))/2)
+	print("The number of Handshakes:",x)
