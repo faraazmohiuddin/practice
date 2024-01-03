@@ -1,0 +1,18 @@
+for a in range(1,16):
+  for b in range(1,16):
+    for c in range(1,16):
+      for d in range(1,16):
+        for e in range(1,16):
+          f=abs(b-a)
+          g=abs(c-b)
+          h=abs(d-c)
+          i=abs(d-e)
+          j=abs(f-g)
+          k=abs(g-h)
+          l=abs(h-i)
+          m=abs(j-k)
+          n=abs(k-l)
+          o=abs(n-m)
+          sum=a+b+c+d+e+f+g+h+i+j+k+l+m+n+o
+          if all(x != y for x, y in [(a,b),(a,c),(a,d),(a,e),(a,f),(a,g),(a,h),(a,i),(a,j),(a,k),(a,l),(a,m),(a,n),(a,o),(b,c),(b,d),(b,e),(b,f),(b,g),(b,h),(b,i),(b,j),(b,k),(b,l),(b,m),(b,n),(b,o),(c,d),(c,e),(c,f),(c,g),(c,h),(c,i),(c,j),(c,k),(c,l),(c,m),(c,n),(c,o),(d,e),(d,f),(d,g),(d,h),(d,i),(d,j),(d,k),(d,l),(d,m),(d,n),(d,o),(e,f),(e,g),(e,h),(e,i),(e,j),(e,k),(e,l),(e,m),(e,n),(e,o),(f,g),(f,h),(f,i),(f,j),(f,k),(f,l),(f,m),(f,n),(f,o),(g,h),(g,i),(g,j),(g,k),(g,l),(g,m),(g,n),(g,o),(h,i),(h,j),(h,k),(h,l),(h,m),(h,n),(h,o),(i,j),(i,k),(i,l),(i,m),(i,n),(i,o),(j,k),(j,l),(j,m),(j,n),(j,o),(k,l),(k,m),(k,n),(k,o),(l,m),(l,n),(l,o),(m,n),(m,o),(n,o)]):
+            print(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o)
