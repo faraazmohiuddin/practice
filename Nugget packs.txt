@@ -1,0 +1,11 @@
+sum=int(input())
+flag=0
+for i in range(0,100):
+  for j in range(0,100):
+    for k in range(0,100):
+      if 6*i+9*j+20*k==sum:
+        print ("possible:",i,j,k)
+        flag=1
+        break
+if flag==0:
+  print("not possible")
